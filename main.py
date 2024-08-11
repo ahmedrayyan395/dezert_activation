@@ -273,7 +273,7 @@ async def check_subscriptions(context: ContextTypes.DEFAULT_TYPE):
             logger.error(f"خطأ في إرسال الرسالة إلى المستخدم {user_id}: {e}")
 
 def main():
-    application = Application.builder().token("7124513428:AAG4KTA_dOvuaLUMB5bq4kIo6opEGiZXQjM").build()
+    application = Application.builder().token("7063252878:AAG2Zk4CTCWOBYQjIXaKNpcIwmcm3yLcBX8").build()
     # جدولة وظيفة التحقق من الاشتراكات لتعمل كل يوم
     job_queue = application.job_queue
     job_queue.run_repeating(check_subscriptions, interval=timedelta(days=1), first=timedelta(seconds=10))
